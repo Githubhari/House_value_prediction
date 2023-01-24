@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+    </head>
+    <body>
+         
+        <nav id="home">
+            <a href="index.html" ><img src="logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="#vd">HOME</a></li>
+                    <li><a href="#sec2">NEWS</a></li>
+                    <li><a href="#sec4">ABOUT</a></li>
+                    <li><a href="#sec3">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+         
+<!--section 1-->
+        
+        <section class="section1" id="sec1">
+            
+             <video playsinline autoplay muted loop class="back-video" id="vd">
+             <source src="bgvideo.mp4" type="video/mp4">
+    
+             </video>
+        <!--   <nav>
+                <a href="index.html" ><img src="logo.png" ></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#sec1">HOME</a></li>
+                        <li><a href="#sec2">NEWS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        -->
+            <div class="text-box">
+                <h1>demo text</h1>
+                <a class="formbtn"href="http://localhost/ex.php">GO</a>
+
+            </div>
+                
+
+        </section>
+<!--section 2-->
+        <section class="section2" id="sec2">
+             
+            <h1 class="sec2h1">Briefs</h1>
+            <p class="sec2p">About project</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3 class="sec2h3">Front-End</h3>
+                    <p>jhgfywdufgwufgweufgewfgwefjhew<br>hjfhewufewufewufewu</p>
+                </div>
+                <div class="course-col">
+                    <h3 class="sec2h3">Server</h3>
+                    <p>jhgfywdufgwufgweufgewfgwefjhewhj<br>fhewufewufewufewu</p>
+                </div>
+                <div class="course-col">
+                    <h3 class="sec2h3">Back-End</h3>
+                    <p>jhgfywdufgwufgweufgewfgwefjhewhjf<br>hewufewufewufewu</p>
+                </div>
+            </div>
+        </section>
+  
+
+<!--section 4-->
+        <section class="section4"  style="background-color: #E63946;" id="sec4">
+          <!--  <h2 class="sec4h2">About Us</h2> -->
+            <div class="sec4">
+                <h2 class="sec4h2">About Us</h2> 
+                <h1 class="s4h1">This is purely: <div class="roller">
+                  <span id="rolltext">HTML<br/>
+                  CSS<br/>
+                  Curiosity<br/>
+                  <span id="spare-time">too much spare time?</span><br/>
+                  </div>
+                  </h1>
+                  
+                </div>            
+        </section>
+<!--Section 5-->
+        <section class="section5" style="background-color: #E63946;" >
+            <div class="icons" >
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+              </div>
+              <div class="sec5p" style="padding-bottom: 2%;">
+                <h3>&copy; Copyright 2022 HTML.am</h3> 
+              </div> 
+
+        </section>       
+<!--section3-->
+        <section class="section3" id="sec3">
+            <div class="contact container">
+                <form>
+                    <div class="form">
+                        <div class="form-txt">
+                            <h1>Contact Us</h1>
+                            <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict
+                            attention.</span>
+                            <h3>USA</h3>
+                            <p>195 E Parker Square Dr, Parker, CO 801<br>+43 982-314-0958</p>
+                            <h3>India</h3>
+                            <p>HW95+C9C, Mhada Colony, Viman Nagar, Pune, Maharashtra<br>411014</p>
+                        </div>
+                        <div class="form-details">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
+                            <button>SEND MESSAGE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    
+
+        </section>
+<!--Java script toggle menu-->       
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+            
+        }
+      </script>
+        
+    
+    </body>
+
+</html>
